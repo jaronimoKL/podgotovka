@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет магазин Xiaomi</title>
+    <link rel="stylesheet" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+    <div class="overlay"></div>
+    <header class="header header__container">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo"><img src="img/logo.png" class="logo__img" alt="логотип"></a>
+            <nav class="nav" data-nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--drop">Каталог</a>
+                        <ul
+                            class="nav__list nav__list--dropdown dropdown-list dropdown-submenu dropdown-submenu__align">
+                            <li class="dropdown-submenu__item mobile-back"><a href="#"
+                                    class="dropdown-list__link mobile-back__link">Назад</a></li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Телефоны</h3>
+                                <ul class="dropdown-submenu__list">
+                                    <li class="dropdown-submenu__list-item"><a href="redmi-note.html">Redmi Note</a>
+                                    </li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Xiaomi 12T</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Poco X5</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Кувыш 12S</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Аксессуары</h3>
+                                <ul class="dropdown-submenu__list">
+                                    <li class="dropdown-submenu__list-item"><a href="#">Чехлы</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Кабели</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Карты памяти</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Стекла</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Распродажа</h3>
+                                <a href="#" class="dropdown-submenu__banner"><img src="img/sale.png" alt="акция"
+                                        class="banner"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--drop">Информация</a>
+                        <ul class="nav__list nav__list--dropdown dropdown-list nav__list-wrap">
+                            <li class="dropdown-submenu__item mobile-back"><a href="#"
+                                    class="dropdown-list__link mobile-back__link">Назад</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Доставка</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Оплата</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Обзоры</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Рейтинги</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link">Сервисные центры</a></li>
+                </ul>
+                <div class="header__cart cart" tabindex="0">
+                    <div class="cart__text">
+                        <span class="nav__item nav__link">Корзина</span>
+                        <span class="cart__quantity">0</span>
+                    </div>
+                    <div class="cart-content">
+                        <ul class="cart-content__list" data-simplebar>
+                        </ul>
+                        <div class="cart-content__bottom">
+                            <div class="cart-content__fullprice">
+                                <span class="cart-content__text">Итого:</span>
+                                <span class="fullprice">568 789 ₽</span>
+                            </div>
+                            <button class="cart-content__btn btn" data-graph-path="modal"
+                                data-graph-animation="fadeInUp">Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <div class="card product">
+                <div class="card-slider">
+                    <div class="card-slider__nav slider-nav">
+                        <div class="slider-nav__item" tabindex="0"><img class="slier-nav__img" src="img/redmi-note-10-1.jpg" alt="redmi-note"></div>
+                        <div class="slider-nav__item" tabindex="0"><img class="slier-nav__img" src="img/redmi-note-10-2.jpg" alt="redmi-note"></div>
+                        <div class="slider-nav__item" tabindex="0"><img class="slier-nav__img" src="img/redmi-note-10-3.jpg" alt="redmi-note"></div>
+                        <div class="slider-nav__item" tabindex="0"><img class="slier-nav__img" src="img/redmi-note-10-1.jpg" alt="redmi-note"></div>
+                        <div class="slider-nav__item" tabindex="0"><img class="slier-nav__img" src="img/redmi-note-10-2.jpg" alt="redmi-note"></div>
+                    </div>
+                    <div class="card-slider__block slider-block">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/redmi-note-10-1.jpg" alt="redmi-note"></div>
+                            <div class="swiper-slide"><img src="img/redmi-note-10-2.jpg" alt="redmi-note"></div>
+                            <div class="swiper-slide"><img src="img/redmi-note-10-3.jpg" alt="redmi-note"></div>
+                            <div class="swiper-slide"><img src="img/redmi-note-10-1.jpg" alt="redmi-note"></div>
+                            <div class="swiper-slide"><img src="img/redmi-note-10-2.jpg" alt="redmi-note"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <span class="vendor">Артикул: 879876</span>
+                    <h1 class="title-product">Смартфон Xiaomi Redmi Note 11 128 ГБ</h1>
+                    <div class="testimonials">
+                        <div class="rating">
+                            <img src="img/star.svg" alt="Рейтинг 5 из 5">
+                            <img src="img/star.svg" alt="Рейтинг 5 из 5">
+                            <img src="img/star.svg" alt="Рейтинг 5 из 5">
+                            <img src="img/star.svg" alt="Рейтинг 5 из 5">
+                            <img src="img/star.svg" alt="Рейтинг 5 из 5">
+                        </div>
+                        <a href="#" class="testimonials__link">Отзывы 83</a>
+                    </div>
+                    <span class="available">В наличии: 13 шт</span>
+                    <div class="price">
+                        <span class="price__current">19 789 ₽</span>
+                        <span class="price__old"> 24 578 ₽</span>
+                    </div>
+                    <button class="buy btn">Купить</button>
+                </div>
+            </div>
+        </div>
+        <section class="tabs-section">
+            <div class="tabs">
+                <ul class="tabs__list">
+                    <li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-tabs-path="main">Характеристики</button></li>
+                    <li class="tabs__item"><button class="tabs__btn" data-tabs-path="archive">Документы</button></li>
+                    <li class="tabs__item"><button class="tabs__btn" data-tabs-path="settings">Обзоры</button></li>
+                </ul>
+                <div class="tabs__content tabs__content--active" data-tabs-target="main">
+                    <div class="cont">
+                        <h2 class="content__title">Общие характеристики</h2>
+                        <p class="content__descr">Xiaomi Redmi Note 11S - смартфон с 6,43-дюймовым дисплеем AMOLED с частотой обновления 90 Гц. Работает устройство под управлением процессора MediaTek Helio G96. Чип поставляется в паре с 6 Гб ОЗУ и накопителем 128 ГБ. Работает аппарат из коробки под управлением MIUI 13. Фронтальная камера имеет разрешение 16 МП. Сзади четыре камеры, 108+8+2+2 МП - основная, широкоугольная. В довесок к ним имеются макрокамера и сенсор глубины. Основной датчик - широко известный и весьма популярный Samsung ISOCELL HM2. Смартфон получил стереодинамики, разъём для наушников, боковой сканер отпечатков пальцев, аккумулятор на 5000 мА·ч с быстрой зарядкой на 33 Вт, NFC-модуль и гибридный слот для SIM-карты и microSD.</p>
+                        <ul class="content__list">
+                            <li class="content__item">
+                                <a href="#" class="content__link sd">
+                                    <span class="content__text">Карта памяти micro</span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="#" class="content__link">
+                                    <span class="content__text">Чехол GRESSO</span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="#" class="content__link">
+                                    <span class="content__text">Портативная колонка</span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="#" class="content__link">
+                                    <span class="content__text">Наушники</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabs__content" data-tabs-target="archive">
+                    <div class="cont">
+                        <h2 class="content__title">Сертификаты</h2>
+                        <p class="content__descr">Здесь находятся все сертификаты товара</p>
+                        <ul class="content__list">
+                            <li class="content__item">
+                                <a href="https://items-certificates.s1.citilink.ru/CSR082591_TS_043493098_3061009170.jpg" class="content__link">
+                                    <span class="content__text">НИП RU .ФСБ.0000055024</span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="https://items-certificates.s1.citilink.ru/CSR082591_TS_043493571_895415039.jpg" class="content__link">
+                                    <span class="content__text">ЕАЭС RU С-CN.РС52.В.00500/20</span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="https://items-certificates.s1.citilink.ru/CSR082593_TS_043494052_3393500037.jpg" class="content__link">
+                                    <span class="content__text">ЕАЭС RU С-CN.РС52.В.00500/22</span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <a href="https://items-certificates.s1.citilink.ru/CSR082593_TS_043494052_3393500037.jpg" class="content__link">
+                                    <span class="content__text">ЕАЭС RU С-CN.РС52.В.00500/22</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabs__content" data-tabs-target="settings">
+                    <div class="cont">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1-1z8ACvfAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal">
+        <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+            <div class="modal-content order-modal__content">
+                <div class="order-modal__top">
+                    <h2 class="order-modal__title">Оформление заказа</h2>
+                    <span class="order-modal__number">Заказ № 3456 67</span>
+                </div>
+                <div class="order-modal__info">
+                    <div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span>3 шт</span></div>
+                    <div class="order-modal__summ order-modal__info-item">Общая сумма заказа: <span>568 789 ₽</span></div>
+                    <div class="order-modal__products order-modal__info-item">
+                        <button class="order-modal__btn">Состав заказа</button>
+                        <ul class="order-modal__list">
+                        </ul>
+                    </div>
+                </div>
+                <form action="#" class="order-modal__form order">
+                    <input type="hidden" name="theme" value="Обратный звонок">
+                    <input type="hidden" name="admin_email[]" value="kirillov240503@gmail.com">
+                    <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+                    <label class="order__label">
+                        <span class="order__text">Ваше имя</span>
+                        <input type="text" name="Имя" class="order__input">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Номер телефона</span>
+                        <input type="tel" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Ваше имя</span>
+                        <input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+                    </label>
+                    <button class="order__btn btn">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="height"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/cartonka.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="libs/scroll/simplebar.js"></script>
+    <script src="libs/modal/modal.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

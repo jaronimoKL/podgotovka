@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет магазин Xiaomi</title>
+    <link rel="stylesheet" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo"><img src="img/logo.png" class="logo__img" alt="логотип"></a>
+            <nav class="nav" data-nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--drop">Каталог</a>
+                        <ul
+                            class="nav__list nav__list--dropdown dropdown-list dropdown-submenu dropdown-submenu__align">
+                            <li class="dropdown-submenu__item mobile-back"><a href="#"
+                                    class="dropdown-list__link mobile-back__link">Назад</a></li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Телефоны</h3>
+                                <ul class="dropdown-submenu__list">
+                                    <li class="dropdown-submenu__list-item"><a href="redmi-note.html">Redmi Note</a>
+                                    </li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Xiaomi 12T</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Poco X5</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Кувыш 12S</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Аксессуары</h3>
+                                <ul class="dropdown-submenu__list">
+                                    <li class="dropdown-submenu__list-item"><a href="#">Чехлы</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Кабели</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Карты памяти</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Стекла</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Распродажа</h3>
+                                <a href="#" class="dropdown-submenu__banner"><img src="img/sale.png" alt="акция"
+                                        class="banner"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--drop">Информация</a>
+                        <ul class="nav__list nav__list--dropdown dropdown-list nav__list-wrap">
+                            <li class="dropdown-submenu__item mobile-back"><a href="#"
+                                    class="dropdown-list__link mobile-back__link">Назад</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Доставка</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Оплата</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Обзоры</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Рейтинги</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link">Сервисные центры</a></li>
+                </ul>
+                <div class="header__cart cart" tabindex="0">
+                    <div class="cart__text">
+                        <span class="nav__item nav__link">Корзина</span>
+                        <span class="cart__quantity">0</span>
+                    </div>
+                    <div class="cart-content">
+                        <ul class="cart-content__list" data-simplebar>
+                        </ul>
+                        <div class="cart-content__bottom">
+                            <div class="cart-content__fullprice">
+                                <span class="cart-content__text">Итого:</span>
+                                <span class="fullprice">568 789 ₽</span>
+                            </div>
+                            <button class="cart-content__btn btn" data-graph-path="modal"
+                                data-graph-animation="fadeInUp">Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+    <script src="libs/scroll/simplebar.js"></script>
+    <script src="libs/modal/modal.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

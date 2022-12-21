@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет магазин Xiaomi</title>
+    <link rel="stylesheet" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo"><img src="img/logo.png" class="logo__img" alt="логотип"></a>
+            <nav class="nav" data-nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--drop">Каталог</a>
+                        <ul
+                            class="nav__list nav__list--dropdown dropdown-list dropdown-submenu dropdown-submenu__align">
+                            <li class="dropdown-submenu__item mobile-back"><a href="#"
+                                    class="dropdown-list__link mobile-back__link">Назад</a></li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Телефоны</h3>
+                                <ul class="dropdown-submenu__list">
+                                    <li class="dropdown-submenu__list-item"><a href="redmi-note.html">Redmi Note</a>
+                                    </li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Xiaomi 12T</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Poco X5</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Кувыш 12S</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Аксессуары</h3>
+                                <ul class="dropdown-submenu__list">
+                                    <li class="dropdown-submenu__list-item"><a href="#">Чехлы</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Кабели</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Карты памяти</a></li>
+                                    <li class="dropdown-submenu__list-item"><a href="#">Стекла</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu__item">
+                                <h3 class="dropdown-submenu__title">Распродажа</h3>
+                                <a href="#" class="dropdown-submenu__banner"><img src="img/sale.png" alt="акция"
+                                        class="banner"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--drop">Информация</a>
+                        <ul class="nav__list nav__list--dropdown dropdown-list nav__list-wrap">
+                            <li class="dropdown-submenu__item mobile-back"><a href="#"
+                                    class="dropdown-list__link mobile-back__link">Назад</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Доставка</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Оплата</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Обзоры</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Рейтинги</a></li>
+                            <li class="dropdown-list__item"><a href="#" class="dropdown-list__link">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#" class="nav__link">Сервисные центры</a></li>
+                </ul>
+                <div class="header__cart cart" tabindex="0">
+                    <div class="cart__text">
+                        <span class="nav__item nav__link">Корзина</span>
+                        <span class="cart__quantity">0</span>
+                    </div>
+                    <div class="cart-content">
+                        <ul class="cart-content__list" data-simplebar>
+                        </ul>
+                        <div class="cart-content__bottom">
+                            <div class="cart-content__fullprice">
+                                <span class="cart-content__text">Итого:</span>
+                                <span class="fullprice">568 789 ₽</span>
+                            </div>
+                            <button class="cart-content__btn btn" data-graph-path="modal"
+                                data-graph-animation="fadeInUp">Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <h1 class="title">Смартфоны Redmi Note</h1>
+            <div class="products-content grid-container">
+                <ul class="products-grid">
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="card-product.html" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn btn" >Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                    <li class="products-grid__item">
+                        <article class="product">
+                            <a href="#" class="product__image">
+                                <div class="product__switch image-switch">
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-1.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-2.jpg"></div>
+                                    </div>
+                                    <div class="image-switch__item">
+                                        <div class="image-switch__img"><img src="img/redmi-note-10-3.jpg"></div>
+                                    </div>
+                                </div>
+                                <ul class="image-pagination product__image-pagination" aria-hidden="true"></ul>
+                            </a>
+                            <h3 class="product__title">
+                                <a href="#">Смартфон Xiaomi Redmi Note 11 128 ГБ</a>
+                            </h3>
+                            <div class="product__props">
+                                <span class="product__rating">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z"
+                                            fill="#03a3ec" />
+                                    </svg>
+                                    4,5
+                                </span>
+                                <span class="product__testimonials">83 отзыва</span>
+                            </div>
+                            <div class="product__info">
+                                <span class="product__trem">Артикул: 879876</span>
+                                <span class="product__available">В наличии: 13 шт</span>
+                            </div>
+                            <div class="product__price product-price">
+                                <span class="product-price__current">19 789 ₽</span>
+                                <span class="product-price__old">24 578 ₽</span>
+                            </div>
+                            <button class="product__btn">Добавить в корзину</button>
+                        </article>
+                    </li>
+                </ul>
+                <div class="btn-center">
+                    <button class="show-more">Показать еще</button>
+                </div>
+            </div>
+            <div class="height"></div>
+        </div>
+    </main>
+    <div class="modal">
+        <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+            <div class="modal-content order-modal__content">
+                <div class="order-modal__top">
+                    <h2 class="order-modal__title">Оформление заказа</h2>
+                    <span class="order-modal__number">Заказ № 3456 67</span>
+                </div>
+                <div class="order-modal__info">
+                    <div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span>3 шт</span></div>
+                    <div class="order-modal__summ order-modal__info-item">Общая сумма заказа: <span>568 789 ₽</span></div>
+                    <div class="order-modal__products order-modal__info-item">
+                        <button class="order-modal__btn">Состав заказа</button>
+                        <ul class="order-modal__list">
+                        </ul>
+                    </div>
+                </div>
+                <form action="#" class="order-modal__form order">
+                    <input type="hidden" name="theme" value="Обратный звонок">
+                    <input type="hidden" name="admin_email[]" value="@gmail.com">
+                    <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+                    <label class="order__label">
+                        <span class="order__text">Ваше имя</span>
+                        <input type="text" name="Имя" class="order__input">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Номер телефона</span>
+                        <input type="tel" name="Телефон" class="order__input" placeholder="+7 (___)___-__-__">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Ваше имя</span>
+                        <input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+                    </label>
+                    <button class="order__btn btn">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="libs/scroll/simplebar.js"></script>
+    <script src="libs/modal/modal.js"></script>
+    <script src="js/fwe.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/show-more.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
