@@ -230,6 +230,12 @@ html {
     display: block;
 }
 
+
+.crutch {
+    display: flex;
+    width: 100%;
+}
+
 @media (max-width: 1336px) {
     .products-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -255,6 +261,27 @@ html {
     }
     .show-more{
         font-size: 4rem;
+    }
+    .crutch {
+        flex-direction: column;
+        top: 0;
+        position: absolute;
+    }
+    .nav__link {
+        width: 100%;
+    }
+    .header__cart {
+        margin: 0;
+        padding: 0;
+    }
+    .cart__quantity {
+        top: 100%;
+    }
+    .cart-content {
+        width: 100%;
+    }
+    .cart-product__delete {
+        padding-right: 20px;
     }
 }
 @media (max-width: 677px) {
